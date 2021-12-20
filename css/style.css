@@ -6,6 +6,32 @@
     background-color: rgb(197, 197, 197);
     color: black;
 }
-.max-h{
-    height: 100vh!important;
+
+.facile{
+    background-color: blue;
+    border: 1px solid white;
+    color: black;
+    height: calc(100vh / 11);
 }
+
+.media{
+    background-color: blue;
+    border: 1px solid white;
+    color: black;
+    height: calc(100vh / 10);
+}
+
+.difficile{
+    background-color: blue;
+    border: 1px solid white;
+    color: black;
+    height: calc(100vh / 8);
+}
+
+.header{
+    height: 50px;
+    margin-bottom:10px;
+}
+
+
+
