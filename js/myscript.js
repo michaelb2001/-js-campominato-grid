@@ -18,7 +18,7 @@ document.getElementById("play").addEventListener("click",function(){
             for(let j=0;j < 10;j++){
                 document.getElementById("riga-"+i).innerHTML += 
                 `
-                <div class="col-1 facile"> 
+                <div class="col-1 blocco "> 
                 </div>
                 `;
             }
@@ -37,13 +37,13 @@ document.getElementById("play").addEventListener("click",function(){
                 for(let j=0; j < 9 ;j++){
                     document.getElementById("riga-"+i).innerHTML += 
                     `
-                    <div class="col-1 media"> 
+                    <div class="col-1 blocco "> 
                     </div>
                     `;
-                }
+                };
         
-              }  
-            };
+            }; 
+        };
 
         if( lv == "difficile" ) {
             tabella.innerHTML="";
@@ -56,13 +56,28 @@ document.getElementById("play").addEventListener("click",function(){
                 for(let j=0; j < 7 ;j++){
                     document.getElementById("riga-"+i).innerHTML += 
                     `
-                    <div class="col-1 media"> 
+                    <div class="col-1 blocco"> 
                     </div>
                     `;
-                }
+                };
         
-                }  
-            };
+            };  
+        };
+
+        let myArray = document.getElementsByClassName("blocco");
+console.log(myArray);
+for (let index = 0; index < myArray.length; index++) {
+
+    myArray[index].addEventListener("click",function(){
+        this.classList.remove("blocco");
+        this.classList.add("acqua");
+
+    });
+
+};
+
 });
+
+
 
 
