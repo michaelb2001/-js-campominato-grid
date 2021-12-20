@@ -1,0 +1,11 @@
+#logo{
+    width: 35px;
+}
+
+.grigio{
+    background-color: rgb(197, 197, 197);
+    color: black;
+}
+.max-h{
+    height: 100vh!important;
+}
