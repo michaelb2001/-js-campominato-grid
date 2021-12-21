@@ -1,5 +1,5 @@
 
-function generaCelle( numeroCelle );
+function generaCelle( numeroCelle )
 {
     let contatore = 1;
     for(let i=0;i < numeroCelle; i++){
