@@ -4,7 +4,7 @@ function generaCelle( numeroCelle )
     let contatore = 1;
     for(let i=0;i < numeroCelle; i++){
 
-        tabella.innerHTML += `<div id="riga-${i}" class="d-flex flex-row justify-content-center"></div>`;
+        tabella.innerHTML += `<div id="riga-${i}" class="d-flex flex-row justify-content-center align-items-center"></div>`;
         const riga         = document.getElementById( "riga-" +i )
         
         for(let j=0;j < numeroCelle; j++){
