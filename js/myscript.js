@@ -1,16 +1,16 @@
 
-function generaCelle( numeroCelle )
+function generaCelle( numeroCelle );
 {
     let contatore = 1;
     for(let i=0;i < numeroCelle; i++){
 
         tabella.innerHTML += `<div id="riga-${i}" class="d-flex flex-row justify-content-center align-items-center"></div>`;
-        const riga         = document.getElementById( "riga-" +i )
+        const riga = document.getElementById( "riga-" +i );
         
         for(let j=0;j < numeroCelle; j++){
 
                 riga.innerHTML += 
-                `<div id="cella-${i}-${j}" class="col-1 blocco ">${ ( numeroCelle * i ) + j +1 } 
+                `<div id="cella-${i}-${j}" class="col-1 blocco">${ ( numeroCelle * i ) + j +1 } 
                 </div> `;
 
                 contatore++
@@ -27,8 +27,7 @@ function selezionaCelle(myArray){
             this.classList.add("acqua");
     
         });
-    }   
-
+    };   
 };
 
 // al click stabilizzo il livello e creo la tabella di gioco di conseguenza
@@ -51,7 +50,7 @@ document.getElementById("play").addEventListener("click",function(){
             colPerRow = 7;           
         };
 
-        generaCelle( colPerRow )  
+        generaCelle( colPerRow ); 
 
         let myArray = document.getElementsByClassName("blocco");
 
