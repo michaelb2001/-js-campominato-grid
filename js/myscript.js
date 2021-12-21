@@ -1,32 +1,4 @@
 
-// al click richiamo la funziona che stabilizza il livello e crea la tabella di gioco di conseguenza
-document.getElementById("play").addEventListener("click",function(){
-    //creo la funziona che stabilizza il livello e crea la tabella di gioco di conseguenza{
-        const lv = document.getElementById("modalita").value;
-        let tabella = document.getElementById("tabella");
-        let colPerRow = 10;
-        //controllo difficoltà e creazione tabella di conseguenza
-        tabella.innerHTML = "";
-        if( lv == "facile" ) {            
-            colPerRow = 10;            
-        };
-    
-        if( lv == "media" ) {           
-            colPerRow = 9;
-        };
-
-        if( lv == "difficile" ) {           
-            colPerRow = 7;           
-        };
-
-        generaCelle( colPerRow )  
-
-        let myArray = document.getElementsByClassName("blocco");
-
-        selezionaCelle(myArray);
-
-});
-
 function generaCelle( numeroCelle )
 {
     let contatore = 1;
@@ -58,3 +30,31 @@ function selezionaCelle(myArray){
     }   
 
 };
+
+// al click stabilizzo il livello e creo la tabella di gioco di conseguenza
+document.getElementById("play").addEventListener("click",function(){
+        //stabilizzo il livello e creo la tabella di gioco di conseguenza{
+        const lv = document.getElementById("modalita").value;
+        let tabella = document.getElementById("tabella");
+        let colPerRow = 10;
+        //controllo difficoltà e creazione tabella di conseguenza
+        tabella.innerHTML = "";
+        if( lv == "facile" ) {            
+            colPerRow = 10;            
+        };
+    
+        if( lv == "media" ) {           
+            colPerRow = 9;
+        };
+
+        if( lv == "difficile" ) {           
+            colPerRow = 7;           
+        };
+
+        generaCelle( colPerRow )  
+
+        let myArray = document.getElementsByClassName("blocco");
+
+        selezionaCelle(myArray);
+
+});
